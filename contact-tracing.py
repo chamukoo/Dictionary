@@ -3,6 +3,10 @@
 # DIctionary
 userInfo = {
     'Lee Anne Angeles' : {'Age':19,'Sex':'Female','Address':'Morong, Rizal','Contact':'09556727712'},
+    'Bruce Banner' : {'Age':50,'Sex':'Male','Address':'Rocinha, Brazil','Contact':'09995638703'},
+    'Natasha Romanoff' : {'Age':35,'Sex':'Female','Address':'Stalingrad, Russia','Contact':'09678452895'},
+    'Steven Rogers' : {'Age':101,'Sex':'Male','Address':'Brooklyn Heights','Contact':'09478923168'},
+    'Peter Parker' : {'Age':16,'Sex':'Male','Address':'New York City, New York','Contact':'09296578450'}
 }
 
 def main():
@@ -71,11 +75,12 @@ def main():
     # Option 3: Ask the user if want to exit or retry.
     if option == 3:
         while True:
-            print("======================= EXIT =========================")
+            print("\n======================= EXIT =========================")
             exitProgram = input("\nDo you want to exit the program? (yes/no) :")
 
             if exitProgram == "yes":
                 print("Thank you for using this program!")
+                print("\n======================================================")
                 exit()
             elif exitProgram == "no":
                 main()
