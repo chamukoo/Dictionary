@@ -25,8 +25,15 @@ if option == 1:
     userInput = {'Age':age,'Sex':sex,'Address':address,'Contact':contact}
     userInfo[name] = userInput
 
-    print(userInfo)
-
 # Option 2: Search, ask full name then display the record
+if option == 2:
+    searchName = input("Who do you want to search for: ")
+
+    if searchName in userInfo:
+        print("Full Name: ", searchName, "\nAge: ", (userInfo[searchName]['Age']),
+        "\nSex:", (userInfo[searchName]['Sex']), "\nAddress: ", (userInfo[searchName]['Address']),
+        "\nContact: ", (userInfo[searchName]['Contact']))
+    else:
+        print("No user is found with the provided name: {}".format(searchName))
 # Option 3: Ask the user if want to exit or retry.
 
