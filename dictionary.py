@@ -18,10 +18,14 @@ option = int(input("What do you want to do? "))
 if option == 1:
     name = input("Enter your name: ")
     age = int(input("Enter your age: "))
+    sex = input("Enter your sex: ")
     address = input("Enter your home address: ")
     contact = input("Enter your contact number: ")
 
-print(name, age, address, contact)
+    userInput = {'Age':age,'Sex':sex,'Address':address,'Contact':contact}
+    userInfo[name] = userInput
+
+    print(userInfo)
 
 # Option 2: Search, ask full name then display the record
 # Option 3: Ask the user if want to exit or retry.
