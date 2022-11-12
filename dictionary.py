@@ -35,5 +35,14 @@ if option == 2:
         "\nContact: ", (userInfo[searchName]['Contact']))
     else:
         print("No user is found with the provided name: {}".format(searchName))
+
+if option == 3:
+    exitProgram = input("Are you sure you want to exit the program? (yes/no) :")
+
+    if exitProgram == "yes":
+        print("Thank you for using this program!")
+        exit()
+        
+        
 # Option 3: Ask the user if want to exit or retry.
 
