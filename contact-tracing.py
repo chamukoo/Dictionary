@@ -23,10 +23,10 @@ def main():
     if option == 1:
         while True:
             print("\n=================== ADD USER INFO ====================")
-            name = input("\n\tEnter your name: ")
+            name = input("\n\tEnter your name: ").title()
             age = int(input("\tEnter your age: "))
-            sex = input("\tEnter your sex: ")
-            address = input("\tEnter your home address: ")
+            sex = input("\tEnter your sex: ").capitalize()
+            address = input("\tEnter your home address: ").title()
             contact = input("\tEnter your contact number: ")
             print("\n======================================================")
 
@@ -35,9 +35,9 @@ def main():
 
             while True:
                 addAgain = input("\nDo you want to add another user info? (yes/no): ")
-                if addAgain == "yes":
+                if addAgain.lower() == "yes":
                     break
-                elif addAgain == "no":
+                elif addAgain.lower() == "no":
                     main()
                 else:
                     print("Invalid Input! Please try again.")
@@ -48,7 +48,7 @@ def main():
     if option == 2:
         while True:
             print("\n================== SEARCH USER NAME ==================")
-            searchName = input("\nWho do you want to search for: ")
+            searchName = input("\nWho do you want to search for: ").title()
 
             if searchName in userInfo:
                 print("\n\tResult:")
@@ -64,9 +64,9 @@ def main():
 
             while True:
                 searchAgain = input("\nDo you want to search again? (yes/no): ")
-                if searchAgain == "yes":
+                if searchAgain.lower() == "yes":
                     break
-                elif searchAgain == "no":
+                elif searchAgain.lower() == "no":
                     main()
                 else:
                     print("Invalid Input! Please try again.")
@@ -78,11 +78,11 @@ def main():
             print("\n======================= EXIT =========================")
             exitProgram = input("\nDo you want to exit the program? (yes/no) :")
 
-            if exitProgram == "yes":
+            if exitProgram.lower() == "yes":
                 print("Thank you for using this program!")
                 print("\n======================================================")
                 exit()
-            elif exitProgram == "no":
+            elif exitProgram.lower() == "no":
                 main()
             else:
                 print("Invalid Input! Please try again.")
