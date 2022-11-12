@@ -1,5 +1,10 @@
 # Programmed by: Lee Anne Y. Angeles
 
+# DIctionary
+userInfo = {
+    'Lee Anne Angeles' : {'Age':19,'Sex':'Female','Address':'Morong, Rizal','Contact':'09556727785'},
+}
+
 # Display a menu of options
 print("\n=========== MENU ===========")
 print("\n\t1 -> Add Item")
