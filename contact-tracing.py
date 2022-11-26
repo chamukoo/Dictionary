@@ -45,7 +45,7 @@ def main():
                     
 
     # Option 2: Search, ask full name then display the record
-    if option == 2:
+    elif option == 2:
         while True:
             print("\n================== SEARCH USER NAME ==================")
             searchName = input("\nWho do you want to search for: ").title()
@@ -73,7 +73,7 @@ def main():
                     continue
             
     # Option 3: Ask the user if want to exit or retry.
-    if option == 3:
+    elif option == 3:
         while True:
             print("\n======================= EXIT =========================")
             exitProgram = input("\nDo you want to exit the program? (yes/no) :")
@@ -87,6 +87,10 @@ def main():
             else:
                 print("Invalid Input! Please try again.")
                 continue
+        
+    else:
+        print("\nInvalid Input! Try again.")
+        main()
 
 while True:
     main()
