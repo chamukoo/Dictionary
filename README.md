@@ -4,8 +4,6 @@ A python program for contact tracing:
 
 1. Display a menu of options.
     
-    ![image](https://user-images.githubusercontent.com/95155301/202894644-0f78384d-8fe3-45bb-8417-bc3778b06064.png)
-
 2. Allow user to select item in the menu (check if valid).
 
 3. Perform the selected option
